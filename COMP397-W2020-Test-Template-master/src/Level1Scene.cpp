@@ -183,7 +183,7 @@ void Level1Scene::rolldice()
 	std::stringstream resultStream;
 	resultStream << ResultDiceNum;
 	resultStream >> m_DiceTotal;
-	m_pDiceResultLbl->setText("Result: " + m_DiceTotal);
+	m_pDiceResultLbl->setText("Total: " + m_DiceTotal);
 }
 
 glm::vec2 Level1Scene::getMousePosition()
@@ -194,7 +194,7 @@ glm::vec2 Level1Scene::getMousePosition()
 void Level1Scene::initializeLabels()
 {
 	SDL_Color black = { 0, 0, 0, 0.0 };
-	SDL_Color red = { 255, 00, 00, 255 };
+	SDL_Color Color = { 300, 00, 40, 200 };
 
 
 	//Adding labels
@@ -206,7 +206,7 @@ void Level1Scene::initializeLabels()
 	m_pDiceTwoLbl->setParent(this);
 	addChild(m_pDiceTwoLbl);
 
-	m_pDiceResultLbl = new Label("Total: " + m_DiceTotal, "Dock51", 30, red, glm::vec2(320.0f, 350.0f));
+	m_pDiceResultLbl = new Label("Total: " + m_DiceTotal, "Dock51", 30, Color, glm::vec2(320.0f, 350.0f));
 	m_pDiceResultLbl->setParent(this);
 	addChild(m_pDiceResultLbl);
 }

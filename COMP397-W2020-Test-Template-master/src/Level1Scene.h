@@ -32,11 +32,11 @@ public:
 	int DiceCombo();
 
 private:
-	std::string m_DiceOne;
-	std::string m_DiceTwo;
+	std::string m_DiceOne, m_DiceTwo, m_DiceTotal, m_DiceOneLabel= "DiceOne1", m_DiceTwoLabel= "DiceTwo1";
+	/*std::string m_DiceTwo;
 	std::string m_DiceTotal;	
 	std::string m_DiceOneLabel = "DiceOne1";
-	std::string m_DiceTwoLabel =  "DiceTwo1";
+	std::string m_DiceTwoLabel =  "DiceTwo1";*/
 	
 	
 	RollButton* m_pRollButton;
