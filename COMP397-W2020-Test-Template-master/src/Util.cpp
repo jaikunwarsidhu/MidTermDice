@@ -164,7 +164,7 @@ float Util::repeat(float t, float length)
 
 float Util::RandomRange(float min, float max)
 {
-	return rand() * (max - min + 1) + min;
+	return rand() % int(max - min + 1.0f) + min;
 }
 
 /**
